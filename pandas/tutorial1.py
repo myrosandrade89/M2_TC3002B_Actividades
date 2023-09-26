@@ -14,7 +14,7 @@ df = pd.DataFrame({'Bob': ['I liked it.', 'It was awful.'], 'Sue': ['Pretty good
 
 print(df)
 
-print("Series:")
+print("\nSeries:")
 
 s = pd.Series([1, 2, 3, 4, 5])
 
@@ -24,9 +24,9 @@ s = pd.Series([30, 35, 40], index=['2015 Sales', '2016 Sales', '2017 Sales'], na
 
 print(s)
 
-print("Reading data files:")
+print("\nReading data files:")
 
-wine_reviews = pd.read_csv("../wine-reviews/winemag-data-130k-v2.csv", index_col=0)
+wine_reviews = pd.read_csv("./wine-reviews/winemag-data-130k-v2.csv", index_col=0)
 
 print(wine_reviews.shape)
 
